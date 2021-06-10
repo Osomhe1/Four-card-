@@ -13,12 +13,12 @@ body{
 
 .main{
     font-family: 'Poppins', sans-serif;
-    /* width: 375px; */
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: auto ;
+    display: grid;
+    margin: auto;
+    width: 375px;
 }
+
+
 
 p{
     line-height: 1.3;
@@ -28,10 +28,11 @@ p{
 
 
 .top{
-    text-align: center;
-    margin: 30px;
-    top: -20px;
+    margin: auto;
+    width: 300px;
     padding-top: 30px;
+    padding-bottom: 50px;
+    text-align: center;
     
 }
 
@@ -62,22 +63,17 @@ h3{
 
 
 .bottom-wrapper{
-    top: 50px;
-    /* margin-top: 90px; */
     display: grid;
     grid-gap: 2rem;
-    width: 375px;
+    margin: auto;
+    width: 300px;
 }
 
 
 .bottom{
-    display: grid;
-    padding: 40px ;
     background-color: hsl(0, 0%, 98%);
     gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+
 }
 
 .two{
@@ -97,9 +93,9 @@ h3{
     padding: 20px;
     border-radius: 6px ;
     box-shadow:2px 2px 10px rgb(202 202 202);
-    width: 370px;
-    height: 300px;
-    justify-content: space-evenly;
+    width: 300px;
+    height: auto;
+
 }
 
 .team{
@@ -109,8 +105,8 @@ h3{
     box-shadow:2px 2px 10px rgb(202 202 202);
     padding: 20px;
     gap: 2rem;
-    width: 370px;
-    height: 300px;
+    width: 300px;
+    height: auto;
 
 }
 
@@ -120,13 +116,14 @@ h3{
     border-radius: 6px ;
     box-shadow:2px 2px 10px rgb(202 202 202);
     padding: 20px;
-    width: 370px;
-    height: 300px;
+    width: 300px;
+    height: auto;
 
 }
 
 .image{
     margin-top: 6rem;
+    text-align: right;
 }
 
 .calculator{
@@ -135,28 +132,28 @@ h3{
     border-radius: 6px ;
     box-shadow:2px 2px 10px rgb(202 202 202);
     padding: 20px;
-    width: 370px;
-    height: 300px;
+    width: 300px;
+    height: auto;
 
 }
 
-img{
-    float: right;   
-}
 
 
 @media (min-width:1440px){
 .bottom{
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 40px ;
     background-color: hsl(0, 0%, 98%);
     gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-left: 5rem;
+
 }
+    .bottom-wrapper{
+        margin: auto;
+        width: 100%;
+    }
+    .main{
+        width: 100%;
+        justify-content: center;
+    }
 
 }
